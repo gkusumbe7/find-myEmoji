@@ -36,6 +36,9 @@ function emojiSearch(e){
         if(e.description.indexOf(value) != -1 ){
             return true;
         }
+        if(e.aliases.indexOf(value) != -1 ){
+            return true;
+        }
     })
     displayEmojiData(filterEmojiData);
 }
