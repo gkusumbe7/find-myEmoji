@@ -23,7 +23,7 @@ function displayEmojiData(filterEmojiData){
     cards.innerHTML='';
     filterEmojiData.forEach(e => {
     let cardDiv = document.createElement("cardDiv");
-    cardDiv.innerHTML = `<div class="shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] text-3xl  p-1 m-3  w-20 ">${e.emoji}</div>`
+    cardDiv.innerHTML = `<div id="emojiCard" class="shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] text-3xl  p-1 m-3  w-20 ">${e.emoji}</div>`
     cards.append(cardDiv);
     });
 }
